@@ -25,9 +25,17 @@ This application tells how to setup Apache Kafka and create an application for A
 ## Run Application
 
 1. Run the main java class - **com.listner.kafka.KafkaApplication**
-2. Hit the endpoint in browser
+2. Endpoint to test **Producer**
 
-        http://localhost:8002/kafka/publish/test
-3. Output can be see in Listner we have started before
+    http://localhost:8002/kafka/publish/test
+
+    Output can be see in Listner we have started before
 
     ![Zookeeper](https://github.com/aman7797/spring-boot-kafka/blob/master/img/listnner-response.png)
+
+3. Endpoint to test **Consumer**
+
+	http://localhost:8002/kafka/consume/test
+
+    ![Zookeeper](https://github.com/aman7797/spring-boot-kafka/blob/master/img/consumer-output.png)
+    

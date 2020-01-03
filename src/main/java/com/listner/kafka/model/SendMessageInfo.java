@@ -10,6 +10,12 @@ public class SendMessageInfo {
 	public SendMessageInfo() {
 	}
 
+	@Override
+	public String toString() {
+		return "SendMessageInfo [transId=" + transId + ", coreId=" + coreId + ", queName=" + queName
+				+ ", requestMessage=" + requestMessage + "]";
+	}
+
 	public SendMessageInfo(String transId, String coreId, String queName, String requestMessage) {
 		super();
 		this.transId = transId;

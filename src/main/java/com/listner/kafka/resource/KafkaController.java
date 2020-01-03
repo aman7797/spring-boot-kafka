@@ -1,5 +1,6 @@
 package com.listner.kafka.resource;
 
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.kafka.core.KafkaTemplate;
@@ -21,23 +22,19 @@ public class KafkaController {
 
 	private static final String SERVICE = "worldlink-service";
 
-	/*
-	 * @GetMapping("/publish/{message}") public String post(@PathVariable("message")
-	 * final String message) {
-	 * 
-	 * kafkaTemplate.send(SERVICE, message); return "Test Succesfull"; }
-	 */
+	private org.slf4j.Logger Logger = LoggerFactory.getLogger(KafkaController.class);
 
 	/**
 	 * @param sendMessageInfo
 	 * @return
 	 */
 	@PostMapping("/publish/sendmessageinfo")
-	public String post(@RequestBody SendMessageInfo sendMessageInfo) {
-
+	public String producer(@RequestBody SendMessageInfo sendMessageInfo) {
+		Logger.info("Kafka Producer called :: ");
 		kafkaTemplate.send(SERVICE, sendMessageInfo);
 
 		return "Test Succesfull";
+
 	}
 
 	@GetMapping("/publish/test")
