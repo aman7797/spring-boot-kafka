@@ -10,17 +10,17 @@ This application tells how to setup Apache Kafka and create an application for A
     
         .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties 
     
-    ![Zookeeper](img\zookeeper.properties.png)
+    ![Zookeeper](https://github.com/aman7797/spring-boot-kafka/blob/master/img/zookeeper.properties.png)
 5.	Start Apache Kafka  (open it in another terminal)
 
         .\bin\windows\kafka-server-start.bat .\config\server.properties 
 
-    ![Zookeeper](img\kafka-server.png) 
+    ![Zookeeper](https://github.com/aman7797/spring-boot-kafka/blob/master/img/kafka-server.png) 
 6.	Start Consumer Listening  
 
         .\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic worldlink-service --from-beginning  
     
-    ![Zookeeper](img\kafka-listner.png)
+    ![Zookeeper](https://github.com/aman7797/spring-boot-kafka/blob/master/img/kafka-listner.png)
 
 ## Run Application
 
@@ -29,4 +29,5 @@ This application tells how to setup Apache Kafka and create an application for A
 
         http://localhost:8002/kafka/publish/test
 3. Output can be see in Listner we have started before
-    ![Zookeeper](img\listnner-response.png)
+
+    ![Zookeeper](https://github.com/aman7797/spring-boot-kafka/blob/master/img/listnner-response.png)
