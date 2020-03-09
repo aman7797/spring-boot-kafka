@@ -20,7 +20,7 @@ This application tells how to setup Apache Kafka and create an application for A
 		
 		bin/zookeeper-server-start.sh config/zookeeper.properties
     
-    ![Zookeeper](https://github.com/aman7797/spring-boot-kafka/blob/master/img/zookeeper.properties.png)
+    ![Zookeeper](https://github.com/aman7797/spring-boot-kafka/blob/master/spring-boot-kafka-producer-consumer/img/zookeeper.properties.png)
 5.	Start Apache Kafka  (open it in another terminal)
 
 		.\bin\windows\kafka-server-start.bat .\config\server.properties 
@@ -29,7 +29,7 @@ This application tells how to setup Apache Kafka and create an application for A
 		
 		bin/kafka-server-start.sh config/server.properties
 
-    ![Zookeeper](https://github.com/aman7797/spring-boot-kafka/blob/master/img/kafka-server.png) 
+    ![Zookeeper](https://github.com/aman7797/spring-boot-kafka/blob/master/spring-boot-kafka-producer-consumer/img/kafka-server.png) 
 6.	Start Consumer Listening  
 
 		.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic worldlink-service --from-beginning 
@@ -37,7 +37,7 @@ This application tells how to setup Apache Kafka and create an application for A
 	
 		bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic worldlink-service
     
-    ![Zookeeper](https://github.com/aman7797/spring-boot-kafka/blob/master/img/kafka-listner.png)
+    ![Zookeeper](https://github.com/aman7797/spring-boot-kafka/blob/master/spring-boot-kafka-producer-consumer/img/kafka-listner.png)
 
 => To Check the running topics
 	
