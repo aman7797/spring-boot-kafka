@@ -20,7 +20,7 @@ This application tells how to setup Apache Kafka and create an application for A
 		
 		bin/zookeeper-server-start.sh config/zookeeper.properties
     
-    ![Zookeeper](https://github.com/aman7797/spring-boot-kafka/blob/master/spring-boot-kafka-producer-consumer/img/zookeeper.properties.png)
+    ![Zookeeper](https://github.com/aman7797/spring-boot-kafka/blob/master/spring-boot-kafka-producer-consumer/spring-boot-kafka-producer-consumer/img/zookeeper.properties.png)
 5.	Start Apache Kafka  (open it in another terminal)
 
 		.\bin\windows\kafka-server-start.bat .\config\server.properties 
@@ -52,11 +52,11 @@ This application tells how to setup Apache Kafka and create an application for A
 
     Output can be see in Listner we have started before
 
-    ![Zookeeper](https://github.com/aman7797/spring-boot-kafka/blob/master/img/listnner-response.png)
+    ![Zookeeper](https://github.com/aman7797/spring-boot-kafka/blob/master/spring-boot-kafka-producer-consumer/img/listnner-response.png)
 
 3. Endpoint to test **Consumer**
 
 	http://localhost:8002/kafka/consume/test
 
-    ![Zookeeper](https://github.com/aman7797/spring-boot-kafka/blob/master/img/consumer-output.png)
+    ![Zookeeper](https://github.com/aman7797/spring-boot-kafka/blob/master/spring-boot-kafka-producer-consumer/img/consumer-output.png)
     
